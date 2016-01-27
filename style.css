@@ -1,0 +1,54 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+/*navigation*/
+nav > div > *,
+nav li {
+	display: inline-block;
+}
+
+nav .logo {
+	float: left;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+.hero {
+	height: 100%;
+	background-color: yellow;
+}
+
+.hero h1 {
+	text-align: center;
+}
+
+
+/*general*/
+.spacing {
+	background-color: green;
+	height: 100%;
+	margin: 0 auto;
+	width: 960px;
+}
+
+.clearflix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
