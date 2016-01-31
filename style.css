@@ -18,6 +18,7 @@ img {
     height: auto;
     width: auto\9; /* ie8 */
 }
+
 /*general*/
 .spacing {
 	height: 100%;
@@ -26,7 +27,7 @@ img {
 
 .hero {
 	font-family: 'Lato', sans-serif;
-	background-color: #c8374d;
+	background-color: #16a085;
 	color: white;
 }
 
@@ -67,8 +68,9 @@ nav {
 	left: 0;
 	z-index: 9999;
 	width: 100%;
-	height: 50px;
+	height: 60px;
 	color: white;
+	background-color: #16a085;
 }
 
 nav > div > *,
@@ -78,7 +80,7 @@ nav li {
 }
 
 nav > div > * {
-	margin: 10px;
+	margin: 10px 0;
 }
 
 nav > div {
@@ -96,8 +98,7 @@ nav ul {
 }
 
 .spacing--nav {
-	margin-top: 15px;
-	height: 35px;
+	margin-top: 10px;
 }
 
 .hero {
@@ -128,9 +129,6 @@ nav ul {
 	line-height: 1.5em;
 }
 
-/*.description {
-	background-color: #f9f9f9;
-}*/
 .portfolio h2 {
 	font-family: 'Lato', sans-serif;
 }
@@ -139,12 +137,13 @@ nav ul {
 }
 
 /*my work*/
-/*.portfolio {
-	background-color: #f9f9f9;
-}*/
+.portfolio {
+	background-color: #F3F7F9;
+}
 
 .columns--portfolio *{
 	vertical-align: top;
+	margin-bottom: 20px;
 }
 
 .columns p {
@@ -157,6 +156,40 @@ nav ul {
 
 .columns--portfolio p:first-child {
 	margin-top: 0;
+}
+
+.columns--portfolio span {
+	display: block;
+	width: 150px;
+	height: 40px;
+	background-color: #16a085;
+}
+
+.columns--portfolio a {
+	display: block;
+	width: 150px;
+	height: 40px;
+	background-color: #16a085;
+	border: 1px solid #16a085;
+	border-radius: 5px;
+	line-height: 35px;
+	text-align: center;
+	/*margin: 10px 0;*/
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+    -webkit-transition: background-color 0.8s, border 0.8s;
+    transition: background-color 0.8s, border 0.8s;
+}
+
+.columns--portfolio a:hover {
+	background-color: #1abc9c;
+	border: 1px solid #1abc9c;
+}
+
+.fa-share {
+	line-height: inherit;
 }
 
 .portfolio h2 {
@@ -173,27 +206,33 @@ nav ul {
 /*contact me*/
 .contact {
 	text-align: center;
+	/*background-color: #F3F7F9;*/
 }
 
 .contact span {
 	display: block;
 }
 
-/*footer*/
-footer ul {
+/*contact*/
+.contact ul {
 	list-style-type: none;
+	padding-left: 0;
 }
 
-footer ul li {
-	display: inline-block;
-	margin: 0;
-	padding: 0;
-}
-
-footer > * {
+.contact li {
+	margin-top: 5px;
+	margin-right: 10px;
 	display: inline-block;
 }
+.contact ul li a {
+	color: #000;
+	text-decoration: none;
+}
 
+.contact p, 
+.contact li {
+	font-weight: 300;
+}
 /*animation*/
 .animation {
     animation-duration: 0.8s;
@@ -257,15 +296,18 @@ footer > * {
     display: block;
     width: 90%;
     margin: 10px 5%;
+    text-align: center;
   }
-
+  .columns--portfolio a {
+  	margin: 10px auto;
+  }
   .portfolio h2 {
   	margin-left: 5%;
   }
 }
 
 @media (max-width: 400px) {
-  .hero h2 {
+  .hero h1 {
     font-size: 50px;
   }
 }
