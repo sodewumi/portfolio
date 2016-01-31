@@ -310,4 +310,12 @@ nav ul {
   .hero h1 {
     font-size: 50px;
   }
+
+  .spacing-sections p:first-child {
+  	font-size: 1.2em;
+  }
+
+  .spacing-sections .columns p{
+  	font-size: 1em;
+  }
 }
