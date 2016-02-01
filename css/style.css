@@ -1,0 +1,278 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+   height: 100%;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+   font-family: 'Merriweather Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+/*general*/
+.spacing {
+	height: 100%;
+	margin: 0 10%;
+}
+
+.hero {
+	font-family: 'Lato', sans-serif;
+	background-color: #16a085;
+	color: white;
+}
+
+.spacing-sections {
+	padding: 5% 0;
+}
+
+.spacing h2 {
+	text-align: center;
+}
+
+.flex {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.columns > * {
+	display: inline-block;
+	width: 44%;
+}
+
+.columns p:first-child {
+	margin-right: 10%
+}
+
+/*hero*/
+
+.hero {
+	height: 100%;
+}
+
+.hero h1 {
+	text-align: center;
+	font-size: 80px;
+	line-height: 50px;
+}
+
+.hero-text {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*description*/
+
+.spacing--description > p {
+	font-size: 1.5em;
+}
+
+
+.spacing-sections > p:first-child {
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+.portfolio h2 {
+	font-family: 'Lato', sans-serif;
+}
+.columns p {
+	line-height: 1.7em;
+}
+
+/*my work*/
+.portfolio {
+	background-color: #F3F7F9;
+}
+
+.columns--portfolio *{
+	vertical-align: top;
+	margin-bottom: 20px;
+}
+
+.columns p {
+	font-weight: 300;
+}
+
+.columns {
+	margin-top: 15px;
+}
+
+.columns--portfolio p:first-child {
+	margin-top: 0;
+}
+
+.columns--portfolio span {
+	display: block;
+	width: 150px;
+	height: 40px;
+	background-color: #16a085;
+}
+
+.columns--portfolio a {
+	display: block;
+	width: 150px;
+	height: 40px;
+	background-color: #16a085;
+	border: 1px solid #16a085;
+	border-radius: 5px;
+	line-height: 35px;
+	text-align: center;
+	/*margin: 10px 0;*/
+	text-decoration: none;
+	color: #fff;
+	font-family: 'Lato', sans-serif;
+	font-weight: 400;
+    -webkit-transition: background-color 0.8s, border 0.8s;
+    transition: background-color 0.8s, border 0.8s;
+}
+
+.columns--portfolio a:hover {
+	background-color: #1abc9c;
+	border: 1px solid #1abc9c;
+}
+
+.fa-share {
+	line-height: inherit;
+}
+
+.portfolio h2 {
+	text-align: left;
+}
+
+.columns h3 {
+	font-family: 'Lato', sans-serif;
+	margin-top: 0;
+	margin-bottom: 3px;
+	line-height: 1;
+}
+
+/*contact me*/
+.contact {
+	text-align: center;
+	/*background-color: #F3F7F9;*/
+}
+
+.contact span {
+	display: block;
+}
+
+/*contact*/
+.contact ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.contact li {
+	margin-top: 5px;
+	margin-right: 10px;
+	display: inline-block;
+}
+.contact ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+.contact p, 
+.contact li {
+	font-weight: 300;
+}
+/*animation*/
+.animation {
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+
+.fade-up {
+	animation-name: fadeInUp;
+}
+
+.fade-left {
+	animation-delay: 0.8s;
+	animation-name: fadeInLeft;
+}
+
+.fade-right {
+	animation-delay: 0.8s;
+	animation-name: fadeInRight;
+}
+
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+	transform: translateY(30px);
+  }
+
+  100% {
+	opacity: 1;
+	transform: translateY(0px);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+	transform: translateX(30px);
+  }
+
+  100% {
+	opacity: 1;
+	transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+	transform: translateX(-30px);
+  }
+
+  100% {
+	opacity: 1;
+	transform: translateX(0px);
+  }
+}
+
+
+@media (max-width: 900px) {
+  .columns > * {
+    display: block;
+    width: 90%;
+    margin: 10px 5%;
+    text-align: center;
+  }
+  .columns--portfolio a {
+  	margin: 10px auto;
+  }
+  .portfolio h2 {
+  	margin-left: 5%;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 50px;
+  }
+
+  .spacing-sections p:first-child {
+  	font-size: 1.2em;
+  }
+
+  .spacing-sections .columns p{
+  	font-size: 1em;
+  }
+}
+
