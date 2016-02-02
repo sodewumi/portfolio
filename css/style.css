@@ -1,3 +1,6 @@
+/* ------------------------------------------
+  GENERAL STYLINGS
+--------------------------------------------- */
 html {
   box-sizing: border-box;
 }
@@ -6,11 +9,9 @@ html {
 }
 
 html, body {
-   height: 100%;
-   width: 100%;
-   margin: 0;
-   padding: 0;
-   font-family: 'Merriweather Sans', sans-serif;
+  height: 100%;
+  width: 100%;
+  font-family: 'Merriweather Sans', sans-serif;
 }
 
 img {
@@ -19,65 +20,128 @@ img {
     width: auto\9; /* ie8 */
 }
 
-/*general*/
+.hero,
+.portfolio h2,
+.columns--portfolio a,
+.columns h3,
+.logo {
+  font-family: 'Lato', sans-serif;
+}
+
+section ~ section {
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+/* ------------------------------------------
+  SPACING
+--------------------------------------------- */
 .spacing {
 	height: 100%;
 	margin: 0 10%;
+  padding: 5% 0;
 }
 
-.hero {
-	font-family: 'Lato', sans-serif;
-	background-color: #16a085;
-	color: white;
-}
-
-.spacing-sections {
-	padding: 5% 0;
+.spacing:first-child {
+  padding: 0;
 }
 
 .spacing h2 {
 	text-align: center;
 }
 
-.flex {
-	display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+/* ------------------------------------------
+  COLUMNS
+--------------------------------------------- */
+.columns > * {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 2em;
+  width: 44%;
 }
 
-.columns > * {
-	display: inline-block;
-	width: 44%;
-}
 
 .columns p:first-child {
-	margin-right: 10%
+  margin-right: 10%
 }
 
-/*hero*/
+.columns p {
+  font-weight: 300;
+  line-height: 1.7em;
+}
 
+.columns--portfolio > p {
+  margin-top: 0;
+}
+
+.columns--portfolio span {
+  display: block;
+  width: 150px;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.columns--portfolio a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #16a085;
+  border: 1px solid #16a085;
+  border-radius: 5px;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  -webkit-transition: background-color 0.8s, border 0.8s;
+  transition: background-color 0.8s, border 0.8s;
+}
+
+.columns--portfolio a:hover {
+  background-color: #1abc9c;
+  border: 1px solid #1abc9c;
+}
+
+.columns--portfolio h3 {
+  margin-top: 0;
+  line-height: 1;
+}
+
+/* ------------------------------------------
+  HERO SECTION
+--------------------------------------------- */
 .hero {
-	height: 100%;
+  height: 100%;
+  background-color: #16a085;
+  color: white;
 }
 
 .hero h1 {
-	text-align: center;
-	font-size: 80px;
-	line-height: 50px;
+  text-align: center;
+  font-size: 80px;
+  line-height: 50px;
 }
 
-.hero-text {
-	width: 100%;
-	margin: 0 auto;
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/*description*/
+.flex div {
+  width: 100%;
+  margin: 0 auto;
+}
 
+
+/* ------------------------------------------
+  DESCRIPTION SECTION
+--------------------------------------------- */
 .spacing--description > p {
+  text-align: center;
 	font-size: 1.5em;
 }
-
 
 .spacing-sections > p:first-child {
 	font-size: 1.5em;
@@ -85,91 +149,28 @@ img {
 	line-height: 1.5em;
 }
 
-.portfolio h2 {
-	font-family: 'Lato', sans-serif;
-}
-.columns p {
-	line-height: 1.7em;
-}
-
-/*my work*/
+/* ------------------------------------------
+  WORK SECTION
+--------------------------------------------- */
 .portfolio {
 	background-color: #F3F7F9;
-}
-
-.columns--portfolio *{
-	vertical-align: top;
-	margin-bottom: 20px;
-}
-
-.columns p {
-	font-weight: 300;
-}
-
-.columns {
-	margin-top: 15px;
-}
-
-.columns--portfolio p:first-child {
-	margin-top: 0;
-}
-
-.columns--portfolio span {
-	display: block;
-	width: 150px;
-	height: 40px;
-	background-color: #16a085;
-}
-
-.columns--portfolio a {
-	display: block;
-	width: 150px;
-	height: 40px;
-	background-color: #16a085;
-	border: 1px solid #16a085;
-	border-radius: 5px;
-	line-height: 35px;
-	text-align: center;
-	/*margin: 10px 0;*/
-	text-decoration: none;
-	color: #fff;
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-    -webkit-transition: background-color 0.8s, border 0.8s;
-    transition: background-color 0.8s, border 0.8s;
-}
-
-.columns--portfolio a:hover {
-	background-color: #1abc9c;
-	border: 1px solid #1abc9c;
-}
-
-.fa-share {
-	line-height: inherit;
 }
 
 .portfolio h2 {
 	text-align: left;
 }
 
-.columns h3 {
-	font-family: 'Lato', sans-serif;
-	margin-top: 0;
-	margin-bottom: 3px;
-	line-height: 1;
-}
-
-/*contact me*/
+/* ------------------------------------------
+  CONTACT SECTION
+--------------------------------------------- */
 .contact {
 	text-align: center;
-	/*background-color: #F3F7F9;*/
 }
 
 .contact span {
 	display: block;
 }
 
-/*contact*/
 .contact ul {
 	list-style-type: none;
 	padding-left: 0;
@@ -189,7 +190,10 @@ img {
 .contact li {
 	font-weight: 300;
 }
-/*animation*/
+
+/* ------------------------------------------
+  ANIMATIONS
+--------------------------------------------- */
 .animation {
     animation-duration: 0.8s;
     animation-fill-mode: both;
@@ -208,7 +212,6 @@ img {
 	animation-delay: 0.8s;
 	animation-name: fadeInRight;
 }
-
 
 @keyframes fadeInUp {
   0% {
@@ -247,22 +250,31 @@ img {
 }
 
 
-@media (max-width: 900px) {
+/* ------------------------------------------
+  MEDIA QUERIES
+--------------------------------------------- */
+@media (max-width: 40em) {
   .columns > * {
     display: block;
     width: 90%;
     margin: 10px 5%;
     text-align: center;
   }
-  .columns--portfolio a {
-  	margin: 10px auto;
+
+  .columns--portfolio span {
+  	margin: 15px auto;
   }
+
   .portfolio h2 {
   	margin-left: 5%;
   }
+
+  header .spacing--nav {
+    margin: 0;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25em) {
   .hero h1 {
     font-size: 50px;
   }
