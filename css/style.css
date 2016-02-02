@@ -64,7 +64,7 @@ section ~ section {
 }
 
 
-.columns p:first-child {
+.columns div:first-child {
   margin-right: 10%
 }
 
@@ -73,7 +73,7 @@ section ~ section {
   line-height: 1.7em;
 }
 
-.columns--portfolio > p {
+.columns--portfolio div img {
   margin-top: 0;
   border: 1px solid #616161;
 }
@@ -273,8 +273,18 @@ section ~ section {
   	margin-left: 5%;
   }
 
+  .spacing {
+    margin: 0;
+  }
+
   header .spacing--nav {
     margin: 0;
+  }
+
+  .blurb,
+  .contact .spacing > * {
+    margin-left: 2%;
+    margin-right: 2%;
   }
 }
 
