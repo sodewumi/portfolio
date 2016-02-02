@@ -257,7 +257,7 @@ section ~ section {
 /* ------------------------------------------
   MEDIA QUERIES
 --------------------------------------------- */
-@media (max-width: 40em) {
+@media (max-width: 50em) {
   .columns > * {
     display: block;
     width: 90%;

@@ -49,7 +49,7 @@
   user-select: none;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .js .nav-collapse {
     position: relative;
   }
@@ -115,7 +115,7 @@ header {
   opacity: 1;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .mask {
     display: none !important;
     opacity: 0 !important;
@@ -148,7 +148,7 @@ header {
   float: left;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .nav-collapse {
     float: right;
     width: auto;
@@ -160,7 +160,7 @@ header {
   width: 100%;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .nav-collapse li {
     width: auto;
   }
@@ -181,7 +181,7 @@ header {
   background: #1abc9c;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .nav-collapse a {
     padding: 1.02em 1em;
     text-align: center;
@@ -196,7 +196,7 @@ header {
   padding-left: 2em;
 }
 
-@media screen and (min-width: 40em) {
+@media screen and (min-width: 50em) {
   .nav-collapse ul ul a {
     display: none;
   }
