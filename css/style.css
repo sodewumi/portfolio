@@ -53,6 +53,9 @@ section ~ section {
 /* ------------------------------------------
   COLUMNS
 --------------------------------------------- */
+.columns {
+  margin-top: 30px;
+}
 .columns > * {
   display: inline-block;
   vertical-align: top;
@@ -72,6 +75,7 @@ section ~ section {
 
 .columns--portfolio > p {
   margin-top: 0;
+  border: 1px solid #616161;
 }
 
 .columns--portfolio span {
@@ -134,7 +138,6 @@ section ~ section {
   margin: 0 auto;
 }
 
-
 /* ------------------------------------------
   DESCRIPTION SECTION
 --------------------------------------------- */
@@ -158,6 +161,7 @@ section ~ section {
 
 .portfolio h2 {
 	text-align: left;
+  margin-bottom: 0;
 }
 
 /* ------------------------------------------
@@ -278,13 +282,12 @@ section ~ section {
   .hero h1 {
     font-size: 50px;
   }
-
-  .spacing-sections p:first-child {
-  	font-size: 1.2em;
+  .columns p{
+    font-size: 1em;
+  }
+  .spacing--description > p {
+    font-size: 1.2em;
   }
 
-  .spacing-sections .columns p{
-  	font-size: 1em;
-  }
 }
 
