@@ -1,0 +1,301 @@
+/* ------------------------------------------
+  GENERAL STYLINGS
+--------------------------------------------- */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.hero,
+.portfolio h2,
+.columns--portfolio a,
+.columns h3,
+.logo {
+  font-family: 'Lato', sans-serif;
+}
+
+section ~ section {
+  padding-top: 2em;
+  padding-bottom: 3em;
+}
+
+/* ------------------------------------------
+  SPACING
+--------------------------------------------- */
+.spacing {
+	height: 100%;
+	margin: 0 10%;
+  padding: 5% 0;
+}
+
+.spacing:first-child {
+  padding: 0;
+}
+
+.spacing h2 {
+	text-align: center;
+}
+
+/* ------------------------------------------
+  COLUMNS
+--------------------------------------------- */
+.columns {
+  margin-top: 30px;
+}
+.columns > * {
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 2em;
+  width: 46%;
+}
+
+
+.columns div:first-child {
+  margin-right: 7%
+}
+
+.columns p {
+  font-weight: 300;
+  line-height: 1.7em;
+}
+
+.columns--portfolio div img {
+  margin-top: 0;
+  border: 1px solid #616161;
+}
+
+.columns--portfolio span {
+  display: block;
+  width: 150px;
+  height: 40px;
+  margin-top: 15px;
+}
+
+.columns--portfolio a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #16a085;
+  border: 1px solid #16a085;
+  border-radius: 5px;
+  line-height: 35px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 400;
+  -webkit-transition: background-color 0.8s, border 0.8s;
+  transition: background-color 0.8s, border 0.8s;
+}
+
+.columns--portfolio a:hover {
+  background-color: #1abc9c;
+  border: 1px solid #1abc9c;
+}
+
+.columns--portfolio h3 {
+  margin-top: 0;
+  line-height: 1;
+}
+
+/* ------------------------------------------
+  HERO SECTION
+--------------------------------------------- */
+.hero {
+  height: 100%;
+  background-color: #16a085;
+  color: white;
+}
+
+.hero h1 {
+  text-align: center;
+  font-size: 80px;
+  line-height: 50px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex div {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* ------------------------------------------
+  DESCRIPTION SECTION
+--------------------------------------------- */
+.spacing--description > p {
+  text-align: center;
+	font-size: 1.5em;
+}
+
+.spacing-sections > p:first-child {
+	font-size: 1.5em;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+/* ------------------------------------------
+  WORK SECTION
+--------------------------------------------- */
+.portfolio {
+	background-color: #F3F7F9;
+}
+
+.portfolio h2 {
+	text-align: left;
+  margin-bottom: 0;
+}
+
+/* ------------------------------------------
+  CONTACT SECTION
+--------------------------------------------- */
+.contact {
+	text-align: center;
+}
+
+.contact span {
+	display: block;
+}
+
+.contact ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.contact li {
+	margin-top: 5px;
+	margin-right: 10px;
+	display: inline-block;
+}
+.contact ul li a {
+	color: #000;
+	text-decoration: none;
+}
+
+.contact p, 
+.contact li {
+	font-weight: 300;
+}
+
+/* ------------------------------------------
+  ANIMATIONS
+--------------------------------------------- */
+.animation {
+    animation-duration: 0.8s;
+    animation-fill-mode: both;
+}
+
+.fade-up {
+	animation-name: fadeInUp;
+}
+
+.fade-left {
+	animation-delay: 0.8s;
+	animation-name: fadeInLeft;
+}
+
+.fade-right {
+	animation-delay: 0.8s;
+	animation-name: fadeInRight;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+	transform: translateY(30px);
+  }
+
+  100% {
+	opacity: 1;
+	transform: translateY(0px);
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+	transform: translateX(30px);
+  }
+
+  100% {
+	opacity: 1;
+	transform: translateX(0px);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+	transform: translateX(-30px);
+  }
+
+  100% {
+	opacity: 1;
+	transform: translateX(0px);
+  }
+}
+
+
+/* ------------------------------------------
+  MEDIA QUERIES
+--------------------------------------------- */
+@media (max-width: 50em) {
+  .columns > * {
+    display: block;
+    width: 90%;
+    margin: 10px 5%;
+    text-align: center;
+  }
+
+  .columns--portfolio span {
+  	margin: 15px auto;
+  }
+
+  .portfolio h2 {
+  	margin-left: 5%;
+  }
+
+  .spacing {
+    margin: 0;
+  }
+
+  header .spacing--nav {
+    margin: 0;
+  }
+
+  .blurb,
+  .contact .spacing > * {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+}
+
+@media (max-width: 25em) {
+  .hero h1 {
+    font-size: 50px;
+  }
+  .columns p{
+    font-size: 1em;
+  }
+  .spacing--description > p {
+    font-size: 1.2em;
+  }
+}
