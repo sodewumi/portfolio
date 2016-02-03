@@ -60,12 +60,12 @@ section ~ section {
   display: inline-block;
   vertical-align: top;
   margin-bottom: 2em;
-  width: 44%;
+  width: 46%;
 }
 
 
 .columns div:first-child {
-  margin-right: 10%
+  margin-right: 7%
 }
 
 .columns p {
@@ -298,6 +298,4 @@ section ~ section {
   .spacing--description > p {
     font-size: 1.2em;
   }
-
 }
-
